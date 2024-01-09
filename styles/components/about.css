@@ -1,0 +1,148 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid var(--clr-srborder);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.3)), url('/images/sr-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: animation 0.3s;
+}
+
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-title{
+    font-size: var(--size-2xl);
+    color: var(--clr-srborder);
+}
+
+.about-description {
+    max-width: 60ch;
+    font-size: var(--size-lg);
+    color: var(--clr-srborder);
+    font-weight: 400;
+}
+
+.about-hr{
+    border-color: var(--clr-srborder);
+}
+
+.about-subtitle{
+    font-size: var(--size-xl);
+    color: var(--clr-srborder);
+}
+
+.about-ul-container{
+    display: flex;
+}
+
+.about-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    padding-left: 1em;
+    flex: 1;
+}
+
+.about-list {
+    font-size: var(--size-lg);
+    color: var(--clr-srborder);
+    font-weight: 600;
+}
+
+i{
+    font-size: var(--size-4xl);
+    margin: 1.5rem;
+}
+
+.about-img{
+    border: 5px solid var(--clr-srborder);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* xs */
+@media (min-width: 475px){
+
+    .about{
+        gap: 1.5rem;
+    }
+    
+    .about-content{
+        gap: 1.5rem;
+    }
+    
+    .about-title{
+        font-size: var(--size-3xl);
+    }
+    
+    .about-description {
+        font-size: var(--size-xl);
+    }
+       
+    .about-subtitle{
+        font-size: var(--size-2xl);
+
+    }
+    
+    .about-list {
+        font-size: var(--size-xl);
+    }
+    
+    i{
+        font-size: var(--size-4xl);
+        margin: 1.5rem;
+    }
+}
+
+/* sm */
+@media (min-width: 640px){
+   .about-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .about-img{
+    width: 21.5625rem;
+   }
+}
+
+/* md */
+/* @media (min-width: 768px){
+  
+} */
+
+/* lg * */
+@media (min-width: 1024px){
+  
+    .about{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px){
+  .about-img{
+    margin-right: 4rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px){
+    .about-img{
+       margin-right: 5rem;
+       width: 21.5625rem;
+      }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+ /* background: rgb(26,19,214);*/
+/* background: rgb(0, 4, 57); */
+ background: linear-gradient(90deg, rgba(0, 4, 57, 1) 28%, rgba(0, 4, 57, 1) 40%, rgba(0, 4, 57, 1) 58%);
+}
+
+.letter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 3rem;
+  color: floralwhite;
+  font-weight: 500;
+  margin: 1.5px;
+  line-height: 0.9;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+.logo{
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner__box{
+  width: 1.3rem;
+  height: 1.3rem;
+  background: red;
+  border: 3px solid #000439;
+  border-radius: 6px;
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: floralwhite;
+}
+
+
+.date__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 6px;
+}
+.date__wrapper span{
+  margin: 0 0.5rem;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#hrs:after {
+  content: 'HOURS';
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 75%;
+  transform: translateX(-100%)
+}
+
+#min:after {
+  content: 'MINUTES';
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 75%;
+  transform: translateX(-85%)
+}
+
+#sec:after {
+  content: 'SECONDS';
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 75%;
+  transform: translateX(-80%)
+}
+
+.monthday__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+#month{
+  margin-right: 4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#day{
+  font-size: 2rem;
+  text-align: center;
+}

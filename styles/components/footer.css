@@ -1,0 +1,152 @@
+.footer {
+    background-color: var(--clr-srblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.3)), url('/images/sr-bg-f.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: animation 0.3s;
+}
+
+.footer-title{
+    color: var(--clr-srborder);
+    margin: 1rem 0; 
+    font-size: var(--size-3xl);
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.footer-subtitle{
+    color: var(--clr-srred);
+    font-size: var(--size-lg);
+}
+
+.footer-des{
+    color: var(--clr-srborder);
+    font-size: var(--size-base);
+}
+
+.footer-email{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-email a:first-child{
+    margin-top: 4rem;
+}
+
+.footer-email a{
+    color: var(--clr-srborder);
+}
+
+.footer-email a:hover{
+    color: var(--clr-srdark);
+}
+
+.footer-soclink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ul{
+    display: flex;
+}
+
+.footer-links{
+    list-style: none;
+}
+
+.footer-links a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-links a i{
+    background-color: var(--clr-srblue);
+    font-size: var(--size-5xl);
+    color: var(--clr-srborder);
+    border-radius: 12px;
+}
+
+.footer-links a i:hover{
+    color: var(--clr-srdark);
+}
+
+/* xs */
+@media (min-width: 475px){
+    .footer {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    
+    .footer-title{
+        margin: 1.5rem 0; 
+    }
+    
+    .footer-wrapper{
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .footer-email{
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .footer-email a:first-child{
+        margin-top: 2rem;
+    }
+
+}
+
+/* sm */
+@media (min-width: 640px){
+    .footer {
+        padding: 1rem;
+        flex-direction: colum;
+    }
+}
+
+/* md */
+@media (min-width: 768px){
+    .footer {
+        padding: 1rem;
+        flex-direction: column;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px){
+    .footer {
+        padding: 1rem;
+        flex-direction: row;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px){
+    .footer {
+        padding: 1rem;
+        flex-direction: row;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px){
+    .footer {
+        padding: 1rem;
+        flex-direction: row;
+    }
+}

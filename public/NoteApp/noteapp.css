@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #08138D, #FF0606);
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .container{
+    width: 600px;
+    max-height: 100%;
+    height: 600px;
+    border: 2px solid #9e9e9e;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .newtask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  
+  .i-text{
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-radius: 6px;
+  }
+  
+  .i-text:focus{
+    border: 5px solid #9e9e9e;
+  }
+  
+  #push{
+    position: relative;
+    padding: 1.5rem;
+    background-color: #141B65;
+    color: floralwhite;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border: 1px solid #9e9e9e;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+  
+  #push:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .taskname {
+    border: 2px solid #9e9e9e;
+    background: white;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border: 2px solid #9e9e9e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  
+  .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    word-wrap: wrap;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .complete{
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #141B65;
+    cursor: pointer;
+    border-radius: 6px;
+    color: floralwhite;
+    text-align: end;
+  }
+  
+  .remove{
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #141B65;
+    cursor: pointer;
+    border-radius: 6px;
+    color: floralwhite;
+  }
+  
+  .complete:hover{
+    background-color: floralwhite;
+    color: black;
+  }
+  
+  .remove:hover{
+    background-color: floralwhite;
+    color: black;
+  }
+  /* sr logo */
+  
+  header {
+    background: #141B65;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .des {
+    font-size: 3rem;
+    color: floralwhite;
+    font-weight: 500;
+    margin: 1.5px;
+    line-height: 0.9;
+  }
+  
+  .bold {
+    font-weight: 900;
+  }
+  
+  .logo {
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner__box {
+    width: 1.3rem;
+    height: 1.3rem;
+    background: red;
+    border: 3px solid #000439;
+    border-radius: 6px;
+  }
+  
+  .fade-in-right {
+   animation: fadeInRight 1s ease-in-out;
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+  }

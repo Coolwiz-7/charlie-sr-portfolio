@@ -1,0 +1,138 @@
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--clr-srborder);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background-color: var(--clr-srblue);
+    gap: 1rem;
+    transition: animation 0.3s;
+}
+
+.featured-title {
+    font-size: var(--size-4xl);
+    color: var(--clr-srred);
+    margin: 1rem auto;
+    font-weight: 400;
+}
+
+.featured-img {
+    height: 60ch;
+    width: 50rem;
+}
+
+.featured-btn-wrapper{
+    display: flex;
+}
+
+.featured-btn {
+    margin: 1rem;
+}
+
+.featured-btn:hover{
+    background-color: var(--clr-srblue);
+}
+
+.featured-hr {
+    width: 100%;
+    border: 1px solid var(--clr-srborder);
+}
+
+.featured-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-project {
+    border: 1px solid var(--clr-srborder);
+    background-color: var(--clr-srborder);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 1rem;
+    border-radius: 12px;
+    flex-grow: 1;
+}
+
+.featured-project i {
+    background-color: var(--clr-srborder);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.featured-project a {
+    text-decoration: none;
+    color: var(--clr-srblue);
+    text-align: center;
+    font-size: var(--size-lg);
+}
+
+.featured-project a:hover{
+    text-decoration: underline;
+    color: var(--clr-srred);
+    background-color: var(--clr-srblue);
+    border-radius: 12px;
+}
+
+
+
+
+/* xs */
+@media (min-width: 475px){
+   
+    .featured {
+        gap: 1.5rem;
+    }
+    
+    .featured-title {
+        margin: 1.5rem auto;
+    }
+    
+    .featured-img {
+        height: 50ch;
+    }  
+    
+    .featured-btn {
+        margin: 1.5rem;
+    }
+
+    .featured-project {
+        margin: 1rem;
+        flex-grow: 0;
+    }
+    
+    
+}
+
+/* sm */
+/* @media (min-width: 640px){
+   
+}
+ */
+/* md */
+@media (min-width: 768px){
+    .featured-img {
+        height: 60ch;
+    }  
+}
+
+/* lg */
+@media (min-width: 1024px){
+  
+    .featured-project {
+        margin: 0.9rem;
+        flex-grow: 0;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px){
+  
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px){
+
+}
+ */

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height: 100vh;
+    background: linear-gradient(145deg, #0A1375, #E31039);
+  }
+  
+  html{
+    font-size: 1rem;
+  }
+  
+  .wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+  }
+  
+  .button-option{
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: rgba(123, 13, 125, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #restart{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    padding: 1em;
+    background: linear-gradient(45deg, #0A1375, #E31039);
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  
+  #restart:hover{
+    transform: translateY(-10px);
+  }
+  
+  .popup{
+    background: linear-gradient(145deg, #0A1375, #E31039);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 12vmin;
+  }
+  
+  #new-game{
+    font-size: 0.5em;
+    padding: 0.3em 0.7em;
+    background: linear-gradient(145deg, #0A1375, #E31039);
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #message{
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
+  }
+  
+  .popup.hide{
+    display: none;
+  }
+  
+  
+  /* sportradar logo */
+  
+  
+  header{
+    background: #141B65;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    
+  }
+  
+  .letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title{
+    font-size: 3rem;
+    color: floralwhite;
+    font-weight: 500;
+    margin: 1.5px;
+    line-height: 0.9;
+  }
+  
+  .bold{
+    font-weight: 900;
+  }
+  
+  .logo{
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner__box{
+    width: 1.3rem;
+    height: 1.3rem;
+    background: red;
+    border: 3px solid #000439;
+    border-radius: 6px;
+  }

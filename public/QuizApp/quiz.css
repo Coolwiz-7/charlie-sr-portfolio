@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem
+}
+header{
+  background: #141B65;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  
+}
+
+.letter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-size: 3rem;
+  color: floralwhite;
+  font-weight: 500;
+  margin: 1.5px;
+  line-height: 0.9;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+.logo{
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner__box{
+  width: 1.3rem;
+  height: 1.3rem;
+  background: red;
+  border: 3px solid #000439;
+  border-radius: 6px;
+}
+
+.quiz__container{
+  background: #fff;
+  width: 25rem;
+  height: 23rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+  outline: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+}
+
+#question{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul li{
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.quiz__header{
+  padding: 2rem;
+}
+
+.btn{
+  height: 5.5rem;
+  width: 100%;
+  background: #0ba8eb;
+  border: transparent;
+  padding: 1.5rem;
+  border-radius: 0 0 12px 12px;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.btn:hover{
+  background: #178cbd;
+}
+.btn:focus{
+  background: #178cbd;
+}
+
+#reload{
+  margin-top: 2rem;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #0ba8eb;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border: transparent;
+  color: whitesmoke;
+  font-family: inherit;
+  font-size: 1rem;
+  display: block;
+}
+
+#reload:hover{
+  background-color: #178cbd;
+}
